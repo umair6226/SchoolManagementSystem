@@ -1,0 +1,29 @@
+﻿@model School_Management_System.Models.Users
+@{
+}
+
+<div>
+    <div class="login">
+        <h3 class="text-center" style="color: darkslateblue; margin-bottom:30px">Login Form</h3>
+
+        <form asp-action="Index" method="post">
+
+            <div class="form-group">
+                <label class="col-form-label">User Name</label>
+                <input type="text" class="form-control" asp-for="UserName" />
+                @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="col-form-label">Password</label>
+                <input type="password" class="form-control" asp-for="Password" />
+                @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+            </div>
+
+            <input type="submit" class="btn" />
+
+        </form>
+
+    </div>
+</div>
+
