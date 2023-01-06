@@ -72,16 +72,17 @@ body {
 .login {
     border: 1px solid lightgray;
     border-radius: 10px;
-    height: 400px;
+    height: 430px;
     width: 350px;
     margin: 50px auto;
     box-shadow: 5px 5px 10px lightgray;
     padding: 10px 30px;
 }
 
-.btn {
+.mybtn {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     background-color: darkslateblue;
     color: white;
 }

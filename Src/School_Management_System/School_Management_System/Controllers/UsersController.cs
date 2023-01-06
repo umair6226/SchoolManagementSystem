@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School_Management_System.Controllers
 {
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         public IActionResult Index()
         {

@@ -8,8 +8,16 @@ namespace School_Management_System.Models
 {
     public class Users
     {
-        [Required(ErrorMessage = "Please enter user name")]
-        public string UserName { get; set; }
+        public int UserID { get; set; }
+
+        [Required(ErrorMessage = "Please enter name")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Please enter any contact no")]
+        public string Contact { get; set; }
+
+        [Required(ErrorMessage = "Please enter email")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "Please enter password")]
         public string Password { get; set; }
